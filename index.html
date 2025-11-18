@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GCAKE.Space</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <h1>GCAKE.Space</h1>
-    <p>雞蛋糕個人自媒體創作</p>
-    <img src="img/似顏繪-雞蛋糕.png" alt="雞蛋糕的似顏繪圖片logo">
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🐶狗狗歲數計算機</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>🐶狗狗歲數計算機</h1>
+
+    <div class="calculator">
+      <label for="dob">狗狗出生日期：</label>
+      <div class="calculator-column">
+        <input type="date" id="dob" />
+        <button id="calcBtn">計算</button>
+      </div>
+      <div id="result"></div>
+      <div class="hint">
+        <b>換算公式：</b><br />
+        <p>人類年齡 = 16 × ln(狗年齡) + 31 <br />ln 為自然對數<br /></p>
+        參考文獻：<a
+          href="https://www.cell.com/cell-systems/fulltext/S2405-4712%2820%2930203-9"
+          target="_blank"
+          >Ideker et al., Cell Systems (2020)</a
+        >
+      </div>
+    </div>
+    <script src="calculator.js"></script>
+  </body>
 </html>
