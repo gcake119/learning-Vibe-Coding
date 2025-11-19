@@ -1,7 +1,9 @@
 # learning-Vibe-Coding：🐶 妙麗歲數計算機 (Dog-to-Human Age Calculator)
 
 根據 Cell Systems 發表的 DNA 甲基化研究公式，提供科學換算狗狗人類年齡的互動計算器。  
+
 **深色主題友善色弱，iOS風格、適合桌機/平板/手機響應式體驗。**
+
 [Live Demo](https://gcake119.github.io/learning-Vibe-Coding/)
 
 ## 功能特色

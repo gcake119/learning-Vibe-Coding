@@ -167,39 +167,66 @@ a:hover, a:active, a:focus { color: #f6c94a; }
   font-size: 1.02em;
 }
 
-/* ===== 響應式設計：手機優化 ===== */
+/* === 手機 375px 以下（含） === */
 @media (max-width: 450px) {
   h1 {
     font-size: 1.25rem;
     margin-top: 1.5rem;
   }
   .calculator {
+    width: 95vw;
+    max-width: 375px;
     padding: 1.3rem 0.6rem 1rem 0.6rem;
     margin-top: 1.7rem;
-    width: 99vw;
-    max-width: none;
+    border-radius: 16px;
   }
-  button, input[type="date"] {
-    font-size: 1.04rem;
-    max-width: 96vw;
+  .calculator-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5em;
+  }
+  input[type="date"], button {
+    max-width: 100%;
+    width: 100%;
+    font-size: 1.06em;
+    min-width: 0;
+    height: 2.3em;
   }
   .hint {
     padding: 0.8em 0.3em 0.6em 0.3em;
-    font-size: 0.97em;
+    font-size: 0.95em;
   }
 }
 
-/* ===== 響應式設計：平板 ===== */
+/* === 平板 451px ~ 900px === */
 @media (min-width: 451px) and (max-width: 900px) {
   .calculator {
-    width: 85vw;
-    max-width: 500px;
-    padding: 1.6rem 1rem 1.15rem 1rem;
+    width: 80vw;
+    max-width: 540px;
+    padding: 1.6rem 1.2rem 1.15rem 1.2rem;
+    border-radius: 20px;
   }
   h1 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
   .hint {
-    font-size: 0.97em;
+    font-size: 0.98em;
+  }
+}
+
+/* === 桌機（1024px 以上） === */
+@media (min-width: 1024px) {
+  .calculator {
+    width: 420px;
+    max-width: 98vw;
+    padding: 2.2rem 2.3rem 1.7rem 2.3rem;
+    border-radius: 24px;
+  }
+  h1 {
+    font-size: 2.1rem;
+    margin-top: 2.5rem;
+  }
+  .hint {
+    font-size: 1em;
   }
 }
