@@ -168,14 +168,14 @@ a:hover, a:active, a:focus { color: #f6c94a; }
 }
 
 /* === 手機 375px 以下（含） === */
-@media (max-width: 450px) {
+@media (max-width: 375px) {
   h1 {
     font-size: 1.25rem;
     margin-top: 1.5rem;
   }
   .calculator {
     width: 95vw;
-    max-width: 375px;
+    max-width: none;
     padding: 1.3rem 0.6rem 1rem 0.6rem;
     margin-top: 1.7rem;
     border-radius: 16px;
